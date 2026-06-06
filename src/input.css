@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import "tailwindcss";
+
+nav {
+  @apply text-white fixed top-0 w-full;
+}
+nav .container {
+  @apply flex justify-between items-center relative px-5;
+}
+nav a {
+  @apply font-[Montserrat]  uppercase px-5 py-3 lg:py-2 text-xs block hover:text-gray-400 font-bold;
+}
+nav li {
+  @apply lg:inline-block border-b border-gray-600 lg:border-0 last:py-2 last:border-0 transition-normal;
+}
+nav a img {
+  @apply inline;
+}
+nav a#logo img {
+  @apply w-16 h-16 object-cover text-white;
+}
+nav a.book {
+  @apply bg-white text-black font-normal inline-block p-1;
+}
+nav #toggle {
+  @apply p-2 lg:hidden;
+}
+nav .container ul {
+  @apply absolute top-full left-0 w-full bg-black/80 lg:static lg:w-auto lg:bg-transparent;
+}
+/* slider  */
+.tns-outer {
+  @apply flex justify-center items-center w-full h-full;
+}
+.tns-controls {
+  @apply absolute z-2 p-2 rounded-2xl   m-auto bottom-0 flex justify-center w-50;
+}
+.tns-controls button {
+  @apply uppercase mx-2 bg-gray-400 px-5 py-2 rounded-xl text-white font-bold gap-2 text-center;
+}

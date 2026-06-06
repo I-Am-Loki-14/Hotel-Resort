@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel & Resort</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="bg-gray-900">
+    <!-- nav  -->
+
+    <nav class="z-3 fixed top-0 py-3">
+        <div class="container mx-auto">
+            <a href="#home" id="logo"><i class="fa-solid fa-bed"
+                    style="color: rgb(254, 254, 254);font-size: 1.5rem;"></i></a>
+            <button id="toggle"><i class="fa-solid fa-bars"
+                    style="color: rgb(254, 254, 254);cursor: pointer;font-size: 1.5rem;"></i></button>
+
+            <ul class="hidden lg:block links">
+                <li><a href="#home">the hotel</a></li>
+                <li><a href="#rooms">rooms</a></li>
+                <li><a href="#facalities">facalities</a></li>
+                <li><a href="#gallery">gallery</a></li>
+                <li><a href="#offers">offers</a></li>
+                <li><a href="#location">location</a></li>
+                <li><a href="#book" class="book"><img src="./img/bookmark.svg" alt="">book now</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class=" mt-16 relative h-full">
+        <div class="container p-3 flex justify-content-center m-auto h-full mt-1">
+            <div class="my-slider cursor-pointer">
+                <div>
+                    <img src="./img/bora-bora-3023437_1920.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/cocktail-3327242_1920.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/desert-4388204_1920.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/bora-bora-3023437_1920.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/cocktail-3327242_1920.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/desert-4388204_1920.jpg" alt="">
+                </div>
+            </div>
+            <!-- or ul.my-slider > li -->
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
+    <script>
+        var slider = tns({
+            container: '.my-slider',
+            items: 1,
+            responsive: {
+                640: {
+                    edgePadding: 20,
+                    gutter: 20,
+                    items: 2
+                },
+                700: {
+                    gutter: 30
+                },
+                900: {
+                    items: 3
+                }
+            },
+            mouseDrag: true,
+            autoplay: true,
+            controls: true,
+            autoplayButtonOutput: false,
+        });
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
