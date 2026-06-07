@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <!-- splider  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body class="bg-gray-900">
+<body class=" dark:bg-gray-900">
     <!-- nav  -->
 
     <nav class="z-3 fixed top-0 py-3">
         <div class="container mx-auto">
             <a href="#home" id="logo"><i class="fa-solid fa-bed"
-                    style="color: rgb(254, 254, 254);font-size: 1.5rem;"></i></a>
+                    style="color: rgb(254, 254, 254);font-size: 1.5rem;"></i> My Hotel</a>
             <button id="toggle"><i class="fa-solid fa-bars"
                     style="color: rgb(254, 254, 254);cursor: pointer;font-size: 1.5rem;"></i></button>
 
@@ -28,7 +30,9 @@
                 <li><a href="#gallery">gallery</a></li>
                 <li><a href="#offers">offers</a></li>
                 <li><a href="#location">location</a></li>
-                <li><a href="#book" class="book"><img src="./img/bookmark.svg" alt="">book now</a></li>
+                <li><a href="#book" class="book"><i class="fa-regular fa-bookmark book"
+                            style="font-size: 1rem;"></i>book
+                        now</a></li>
             </ul>
         </div>
     </nav>
@@ -39,24 +43,61 @@
                     <img src="./img/bora-bora-3023437_1920.jpg" alt="">
                 </div>
                 <div>
-                    <img src="./img/cocktail-3327242_1920.jpg" alt="">
+                    <img src="./img/beach5.jpg" alt="">
                 </div>
                 <div>
-                    <img src="./img/desert-4388204_1920.jpg" alt="">
+                    <img src="./img/beach4.jpg" alt="">
                 </div>
                 <div>
-                    <img src="./img/bora-bora-3023437_1920.jpg" alt="">
+                    <img src="./img/beach1.jpg" alt="">
                 </div>
                 <div>
-                    <img src="./img/cocktail-3327242_1920.jpg" alt="">
+                    <img src="./img/beach2.jpg" alt="">
                 </div>
                 <div>
-                    <img src="./img/desert-4388204_1920.jpg" alt="">
+                    <img src="./img/beach3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/room1.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/room2.jpg" alt="">
+                </div>
+                <div>
+                    <img src="./img/room3.jpg" alt="">
                 </div>
             </div>
             <!-- or ul.my-slider > li -->
         </div>
     </section>
+    <section>
+        <div class="container bg-gray-600 ">
+            <section class="splide">
+                <div class="splide__slider">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide"><img src="./img/room1.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="./img/room2.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="./img/room3.jpg" alt=""></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <button class="splide__toggle" type="button">
+                    <svg class="splide__toggle__play" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m22 12-20 11v-22l10 5.5z" />
+                    </svg>
+                    <svg class="splide__toggle__pause" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m2 1v22h7v-22zm13 0v22h7v-22z" />
+                    </svg>
+                </button>
+            </section>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
     <script>
@@ -80,6 +121,11 @@
             autoplay: true,
             controls: true,
             autoplayButtonOutput: false,
+        });
+        new Splide('.splide', {
+            type: 'loop',
+            autoplay: 'pause',
+            perPage: 3,
         });
     </script>
     <script src="./js/main.js"></script>

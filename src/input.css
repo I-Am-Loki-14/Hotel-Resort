@@ -9,10 +9,10 @@ nav .container {
   @apply flex justify-between items-center relative px-5;
 }
 nav a {
-  @apply font-[Montserrat]  uppercase px-5 py-3 lg:py-2 text-xs block hover:text-gray-400 font-bold;
+  @apply font-[Montserrat]  uppercase px-5 py-3 lg:py-2  text-xs block hover:text-gray-400 font-bold;
 }
 nav li {
-  @apply lg:inline-block border-b border-gray-600 lg:border-0 last:py-2 last:border-0 transition-normal;
+  @apply lg:inline-block border-b border-gray-600 lg:border-0 last:py-2 last:border-0 transition-normal last:md:p-2;
 }
 nav a img {
   @apply inline;
@@ -21,7 +21,7 @@ nav a#logo img {
   @apply w-16 h-16 object-cover text-white;
 }
 nav a.book {
-  @apply bg-white text-black font-normal inline-block p-1;
+  @apply bg-white text-black  inline-block p-1 rounded-sm font-bold hover:text-gray-600 hover:bg-gray-200 md:p-2;
 }
 nav #toggle {
   @apply p-2 lg:hidden;
@@ -37,5 +37,25 @@ nav .container ul {
   @apply absolute z-2 p-2 rounded-2xl   m-auto bottom-0 flex justify-center w-50;
 }
 .tns-controls button {
-  @apply uppercase mx-2 bg-gray-400 px-5 py-2 rounded-xl text-white font-bold gap-2 text-center;
+  @apply uppercase md:mx-1 bg-gray-300 hover:bg-gray-200 px-5 py-2 rounded-xl text-gray-800 font-bold gap-2 text-center;
+}
+.thumbnails {
+  display: flex;
+  margin: 1rem auto 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
 }
