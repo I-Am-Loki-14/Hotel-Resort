@@ -9,7 +9,7 @@ nav .container {
   @apply flex justify-between items-center relative px-5;
 }
 nav a {
-  @apply font-[Montserrat]  uppercase px-5 py-3 lg:py-2  text-xs block hover:text-gray-400 font-bold;
+  @apply font-[Montserrat]  uppercase px-5 py-3 lg:py-2  text-xs block  font-bold;
 }
 nav li {
   @apply lg:inline-block border-b border-gray-600 lg:border-0 last:py-2 last:border-0 transition-normal last:md:p-2;

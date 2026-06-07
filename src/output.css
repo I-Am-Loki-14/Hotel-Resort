@@ -21,10 +21,6 @@
     --spacing: 0.25rem;
     --text-xs: 0.75rem;
     --text-xs--line-height: calc(1 / 0.75);
-    --text-xl: 1.25rem;
-    --text-xl--line-height: calc(1.75 / 1.25);
-    --text-2xl: 1.5rem;
-    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-5xl: 3rem;
@@ -340,11 +336,6 @@ nav a {
   --tw-font-weight: var(--font-weight-bold);
   font-weight: var(--font-weight-bold);
   text-transform: uppercase;
-  &:hover {
-    @media (hover: hover) {
-      color: var(--color-gray-400);
-    }
-  }
   @media (width >= 64rem) {
     padding-block: calc(var(--spacing) * 2);
   }
