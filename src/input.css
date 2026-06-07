@@ -39,23 +39,50 @@ nav .container ul {
 .tns-controls button {
   @apply uppercase md:mx-1 bg-gray-300 hover:bg-gray-200 px-5 py-2 rounded-xl text-gray-800 font-bold gap-2 text-center;
 }
-.thumbnails {
-  display: flex;
-  margin: 1rem auto 0;
-  padding: 0;
-  justify-content: center;
+p {
+  @apply text-gray-600 py-5;
+}
+h2 {
+  @apply text-amber-600 text-5xl font-normal;
+}
+#home .home-content {
+  @apply p-20 pb-0 md:pb-20;
+}
+#home .home-img {
+  @apply p-20;
+}
+#home .home-img img {
+  @apply aspect-4/3 object-cover;
 }
 
-.thumbnail {
-  width: 70px;
-  height: 70px;
-  overflow: hidden;
-  list-style: none;
-  margin: 0 0.2rem;
-  cursor: pointer;
+.btn {
+  @apply bg-gray-500 text-white px-5 py-2 text-xs uppercase w-full block hover:bg-gray-400;
+}
+#rooms {
+  @apply bg-amber-50 py-30 p-5;
 }
 
-.thumbnail img {
-  width: 100%;
-  height: auto;
+#rooms .room-card {
+  @apply bg-white text-center cursor-pointer;
+}
+
+#rooms .room-card .room-card-img {
+  @apply overflow-hidden relative after:content-[''] after:inline-block after:w-full after:h-full after:bg-white/50 after:absolute after:top-0 after:left-0 after:opacity-0;
+}
+#rooms .room-card:hover .room-card-img {
+  @apply after:opacity-100;
+}
+
+#rooms .room-card .room-card-img img {
+  @apply aspect-2/1 object-cover;
+}
+
+#rooms .room-card .room-card-content {
+  @apply p-5;
+}
+#rooms .room-card .room-card-content h3 {
+  @apply my-5 uppercase;
+}
+#rooms .room-card:hover img {
+  @apply transform scale-120 transition-all duration-700;
 }

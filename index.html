@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body class=" dark:bg-gray-900">
+<body class=" dark:bg-gray-400">
     <!-- nav  -->
 
     <nav class="z-3 fixed top-0 py-3">
@@ -69,64 +69,76 @@
             </div>
             <!-- or ul.my-slider > li -->
         </div>
-    </section>
-    <section>
-        <div class="container bg-gray-600 ">
-            <section class="splide">
-                <div class="splide__slider">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide"><img src="./img/room1.jpg" alt=""></li>
-                            <li class="splide__slide"><img src="./img/room2.jpg" alt=""></li>
-                            <li class="splide__slide"><img src="./img/room3.jpg" alt=""></li>
-
-                        </ul>
-                    </div>
+        <div class="container mx-auto" id="home">
+            <div class="grid grid-cols-1 lg:grid-cols-2 text-center lg:text-left">
+                <div class="home-content md:text-start lg:text-center">
+                    <p class="uppercase font-[Montserrat]">providing quality since 98</p>
+                    <h2>Rededfines the luxury hospitality experience</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non dolore fugiat corrupti quia
+                        consequatur hic minus, sit, iste delectus officia maxime iusto, sed quas et eaque laudantium ad.
+                        Rerum, repellat?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptatum harum placeat
+                        rem, quasi alias illum deleniti saepe earum, provident sapiente voluptate eaque et dolorem odit
+                        modi. Minima, laboriosam cum!</p>
+                    <a href="###" class="btn  " style="width: auto;display: inline-block;border-radius: 0.2rem;">read
+                        more &gt;</a>
                 </div>
-
-
-                <button class="splide__toggle" type="button">
-                    <svg class="splide__toggle__play" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m22 12-20 11v-22l10 5.5z" />
-                    </svg>
-                    <svg class="splide__toggle__pause" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="m2 1v22h7v-22zm13 0v22h7v-22z" />
-                    </svg>
-                </button>
-            </section>
+                <div class="home-img ">
+                    <img src="./img/beach2.jpg" alt="">
+                </div>
+            </div>
         </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <section class="rooms" id="rooms">
+        <div class="container mx-auto">
+            <h1 class="text-center mx-auto uppercase font-bold text-3xl text-amber-600">rooms & suits</h1>
+            <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere praesentium repellat
+                maxime, eaque sequi voluptatibus nulla ducimus. Dolores totam perferendis dolorem incidunt quo corporis,
+                amet ullam ad nam veritatis natus?</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 py-10 gap-10">
+                <div class="room-card">
+                    <div class="room-card-img">
+                        <img src="./img/room3.jpg" alt="">
+                    </div>
+                    <div class="room-card-content"><a href="###" class="btn">from $50/per night</a>
+                        <h3>classic double room</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quo placeat quibusdam
+                            pariatur reiciendis amet recusandae maxime assumenda, labore beatae harum voluptatum
+                            doloremque voluptatibus tempora vitae, saepe ullam exercitationem iure?</p>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <div class="room-card-img">
+                        <img src="./img/room3.jpg" alt="">
+                    </div>
+                    <div class="room-card-content"><a href="###" class="btn">from $50/per night</a>
+                        <h3>classic double room</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quo placeat quibusdam
+                            pariatur reiciendis amet recusandae maxime assumenda, labore beatae harum voluptatum
+                            doloremque voluptatibus tempora vitae, saepe ullam exercitationem iure?</p>
+                    </div>
+                </div>
+                <div class="room-card">
+                    <div class="room-card-img">
+                        <img src="./img/room3.jpg" alt="">
+                    </div>
+                    <div class="room-card-content"><a href="###" class="btn">from $50/per night</a>
+                        <h3>classic double room</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quo placeat quibusdam
+                            pariatur reiciendis amet recusandae maxime assumenda, labore beatae harum voluptatum
+                            doloremque voluptatibus tempora vitae, saepe ullam exercitationem iure?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
     <script>
-        var slider = tns({
-            container: '.my-slider',
-            items: 1,
-            responsive: {
-                640: {
-                    edgePadding: 20,
-                    gutter: 20,
-                    items: 2
-                },
-                700: {
-                    gutter: 30
-                },
-                900: {
-                    items: 3
-                }
-            },
-            mouseDrag: true,
-            autoplay: true,
-            controls: true,
-            autoplayButtonOutput: false,
-        });
-        new Splide('.splide', {
-            type: 'loop',
-            autoplay: 'pause',
-            perPage: 3,
-        });
+
     </script>
     <script src="./js/main.js"></script>
 </body>
