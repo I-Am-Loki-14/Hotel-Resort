@@ -13,17 +13,17 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 
-<body class=" dark:bg-gray-400">
+<body class=" dark:bg-gray-100">
     <!-- nav  -->
 
-    <nav class="z-3 fixed top-0 py-3">
+    <nav class="z-3 fixed top-0 py-3 duration-300 transition-colors bg-transparent " id="navbar">
         <div class="container mx-auto">
-            <a href="#home" id="logo"><i class="fa-solid fa-bed"
-                    style="color: rgb(254, 254, 254);font-size: 1.5rem;"></i> My Hotel</a>
+            <a href="#home" id="logo" style="color: #E17100;font-size: 1.2rem;"><i class="fa-solid fa-bed"></i> My
+                Hotel</a>
             <button id="toggle"><i class="fa-solid fa-bars"
                     style="color: rgb(254, 254, 254);cursor: pointer;font-size: 1.5rem;"></i></button>
 
-            <ul class="hidden lg:block links">
+            <ul class="hidden lg:block links text-amber-500" id="links">
                 <li><a href="#home">the hotel</a></li>
                 <li><a href="#rooms">rooms</a></li>
                 <li><a href="#facalities">facalities</a></li>
@@ -73,7 +73,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 text-center lg:text-left">
                 <div class="home-content md:text-start lg:text-center">
                     <p class="uppercase font-[Montserrat]">providing quality since 98</p>
-                    <h2>Rededfines the luxury hospitality experience</h2>
+                    <h2 class="text-amber-800 font-[Montserrat]">Rededfines the luxury hospitality experience</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non dolore fugiat corrupti quia
                         consequatur hic minus, sit, iste delectus officia maxime iusto, sed quas et eaque laudantium ad.
                         Rerum, repellat?</p>
@@ -91,7 +91,8 @@
     </section>
     <section class="rooms" id="rooms">
         <div class="container mx-auto">
-            <h1 class="text-center mx-auto uppercase font-bold text-3xl text-amber-600">rooms & suits</h1>
+            <h1 class="text-center mx-auto uppercase font-bold text-3xl text-amber-600 font-[Montserrat]">rooms & suits
+            </h1>
             <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere praesentium repellat
                 maxime, eaque sequi voluptatibus nulla ducimus. Dolores totam perferendis dolorem incidunt quo corporis,
                 amet ullam ad nam veritatis natus?</p>
@@ -131,9 +132,41 @@
                 </div>
             </div>
         </div>
+
     </section>
-
-
+    <section class="bg-white h-full w-full p-5">
+        <div
+            class="w-full m-auto container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-content-center  gap-10 py-10">
+            <div class="w-full">
+                <a href="###"><img src="./img/agency-work-09.jpg" class="w-full object-fit-cover" alt=""></a>
+            </div>
+            <div class="w-full">
+                <a href="###"><img src="./img/agency-work-12.jpg" class="w-full object-fit-cover" alt=""></a>
+            </div>
+            <div class="w-full">
+                <a href="###"><img src="./img/agency-work-15.jpg" class="w-full object-fit-cover" alt=""></a>
+            </div>
+            <div class="w-full">
+                <a href="###"><img src="./img/agency-work-16.jpg" class="w-full object-fit-cover" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <section class="facalities bg-light" id="facalities">
+        <div>
+            <div class="container m-auto p-5">
+                <h1 class="font-[Montserrat] text-center text-4xl font-bold p-5 text-amber-600">HOTEL FACILITIES</h1>
+                <p class="font-[Montserrat] text-gray-600 text-center font-normal">Lorem Ipsum is simply dummy text of
+                    the printing
+                    and
+                    typesetting
+                    industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make
+                    a type specimen
+                    book.</p>
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->

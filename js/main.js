@@ -28,3 +28,18 @@ var slider = tns({
             autoplayButtonOutput: false,
         });
        
+       const navbar = document.getElementById("navbar");
+       
+
+       window.addEventListener('scroll',()=>{
+            if (window.scrollY > 150) {
+                navbar.classList.remove('bg-transparent');
+                navbar.classList.add('bg-slate-800');
+            } else {
+                navbar.classList.remove('bg-slate-800');
+                navbar.classList.add('bg-transparent');
+                
+            }
+       })
+
+       
