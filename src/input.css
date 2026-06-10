@@ -92,3 +92,7 @@ h2 {
 .tab-btn {
   @apply text-gray-600;
 }
+
+#facalities img {
+  @apply object-cover aspect-2/1;
+}
