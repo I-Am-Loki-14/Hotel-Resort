@@ -42,4 +42,17 @@ var slider = tns({
             }
        })
 
-       
+       const tabButtons = document.querySelectorAll('.tab-btn');
+       const tabContent = document.querySelectorAll('.tab-content');
+
+       tabButtons.forEach(button => {
+               button.addEventListener('click',()=>{
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                tabContent.forEach(content=>content.classList.add('hidden'));
+
+                const targetCardId = button.getAttribute('data-tab');
+                const targetCard=document.getElementById(targetCardId);
+                targetCard.classList.remove('hidden');
+               })
+       });

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import "tailwindcss";
 * {
@@ -55,7 +55,7 @@ h2 {
   @apply p-20;
 }
 #home .home-img img {
-  @apply aspect-4/3 object-cover;
+  @apply aspect-3/3 object-cover;
 }
 
 .btn {
@@ -88,4 +88,7 @@ h2 {
 }
 #rooms .room-card:hover img {
   @apply transform scale-120 transition-all duration-700;
+}
+.tab-btn {
+  @apply text-gray-600;
 }

@@ -21,7 +21,7 @@
             <a href="#home" id="logo" style="color: #E17100;font-size: 1.2rem;"><i class="fa-solid fa-bed"></i> My
                 Hotel</a>
             <button id="toggle"><i class="fa-solid fa-bars"
-                    style="color: rgb(254, 254, 254);cursor: pointer;font-size: 1.5rem;"></i></button>
+                    style="color: #E17100;cursor: pointer;font-size: 1.5rem;"></i></button>
 
             <ul class="hidden lg:block links text-amber-500" id="links">
                 <li><a href="#home">the hotel</a></li>
@@ -70,8 +70,8 @@
             <!-- or ul.my-slider > li -->
         </div>
         <div class="container mx-auto" id="home">
-            <div class="grid grid-cols-1 lg:grid-cols-2 text-center lg:text-left">
-                <div class="home-content md:text-start lg:text-center">
+            <div class="grid grid-cols-1 lg:grid-cols-2  items-center">
+                <div class="home-content lg:text-center md:text-start">
                     <p class="uppercase font-[Montserrat]">providing quality since 98</p>
                     <h2 class="text-amber-800 font-[Montserrat]">Rededfines the luxury hospitality experience</h2>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non dolore fugiat corrupti quia
@@ -84,7 +84,7 @@
                         more &gt;</a>
                 </div>
                 <div class="home-img ">
-                    <img src="./img/beach2.jpg" alt="">
+                    <img src="./img/beach2.jpg" alt="" class="rounded">
                 </div>
             </div>
         </div>
@@ -166,7 +166,87 @@
                     book.</p>
             </div>
         </div>
+        <div class="container px-10 m-auto">
+            <div
+                class=" m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 font-[Monserrat] text-gray-600 ">
+                <button class="p-3 tab-btn cursor-pointer bg-gray-200 " data-tab="card-1">Swimming/GYM</button>
+                <button class="p-3 tab-btn cursor-pointer bg-gray-200 " data-tab="card-2">Sports Club</button>
+                <button class="p-3 tab-btn cursor-pointer bg-gray-200 " data-tab="card-3">Pick Up</button>
+                <button class="p-3 tab-btn cursor-pointer bg-gray-200 " data-tab="card-4">Restaurant/Bar</button>
+            </div>
+            <div class="container p-5  ">
+                <div id="card-1"
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center px-5 m-auto justify-content-center active tab-content">
+                    <div class="w-100">
+                        <img src="./img/swimming-gym.jpg" alt="" class="w-full object-fit-cover">
+                    </div>
+                    <div class="text-gray-800 font-[Montserrat]">
+                        <h1 class="text-gray-500 text-2xl">The world class</h1>
+                        <h1 class="text-gray-600 text-4xl">swimming and gym.</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived
+                            not only five centuries, but
+                            also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is
+                            simply dummy text.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived
+                            not only five centuries, but
+                            also the leap into electronic typesetting.</p>
+                    </div>
+                </div>
+                <div id="card-2"
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center px-5 m-auto justify-content-center hidden tab-content">
+                    <div class="w-100">
+                        <img src="./img/sport.jpg" alt="" class="w-full object-fit-cover">
+                    </div>
+                    <div class="text-gray-800 font-[Montserrat]">
+                        <h1 class="text-gray-500 text-2xl">The world class</h1>
+                        <h1 class="text-gray-600 text-4xl">sports and golf club.</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived
+                            not only five centuries, but
+                            also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is
+                            simply dummy text.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived
+                            not only five centuries, but
+                            also the leap into electronic typesetting.</p>
+                    </div>
+                </div>
+                <div id="card-3"
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center px-5 m-auto justify-content-center hidden tab-content">
+                    <div class="w-100">
+                        <img src="./img/pickup.jpg" alt="" class="w-full object-fit-cover">
+                    </div>
+                    <div class="text-gray-800 font-[Montserrat]">
+                        <h1 class="text-gray-500 text-2xl">The world class</h1>
+                        <h1 class="text-gray-600 text-4xl">pick up and luggage.</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived
+                            not only five centuries, but
+                            also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is
+                            simply dummy text.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived
+                            not only five centuries, but
+                            also the leap into electronic typesetting.</p>
+                    </div>
+                </div>
+                <div id="card-4"
+                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center px-5 m-auto justify-content-center hidden tab-content">
+                    <div class="w-100">
+                        <img src="./img/restaurant.jpg" alt="" class="w-full object-fit-cover">
+                    </div>
+                    <div class="text-gray-800 font-[Montserrat]">
+                        <h1 class="text-gray-500 text-2xl">The world class</h1>
+                        <h1 class="text-gray-600 text-4xl">restaurant & banquet hall.</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived
+                            not only five centuries, but
+                            also the leap into electronic typesetting, remaining essentially unchanged. Lorem Ipsum is
+                            simply dummy text.</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived
+                            not only five centuries, but
+                            also the leap into electronic typesetting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <!-- NOTE: prior to v2.2.1 tiny-slider.js need to be in <body> -->
