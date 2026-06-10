@@ -94,5 +94,5 @@ h2 {
 }
 
 #facalities img {
-  @apply object-cover aspect-2/1;
+  @apply object-cover aspect-5/4;
 }

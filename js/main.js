@@ -27,6 +27,31 @@ var slider = tns({
             controls: false,
             autoplayButtonOutput: false,
         });
+
+       
+  var slider = tns({
+    container: '.my-sliderr',
+    items: 1,
+    responsive: {
+      640: {
+        edgePadding: 20,
+        gutter: 20,
+        items: 2
+      },
+      700: {
+        gutter: 30
+      },
+      900: {
+        items: 3
+      }
+    },
+    controls: false,
+    autoplay: true,
+    autoplayButtonOutput: false,
+    mouseDrag:true,
+    speed:500,
+  });
+
        
        const navbar = document.getElementById("navbar");
        
