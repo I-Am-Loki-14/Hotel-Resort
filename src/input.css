@@ -49,13 +49,13 @@ h2 {
   @apply text-amber-600 text-5xl font-normal;
 }
 #home .home-content {
-  @apply p-20 pb-0 md:pb-20;
+  @apply p-5 pb-0 md:pb-20;
 }
 #home .home-img {
-  @apply p-20;
+  @apply p-10;
 }
 #home .home-img img {
-  @apply aspect-3/3 object-cover;
+  @apply aspect-4/3 object-cover;
 }
 
 .btn {
