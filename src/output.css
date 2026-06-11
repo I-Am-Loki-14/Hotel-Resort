@@ -588,7 +588,7 @@ h2 {
   padding: calc(var(--spacing) * 10);
 }
 #home .home-img img {
-  aspect-ratio: 4/2;
+  aspect-ratio: 5/4;
   object-fit: cover;
 }
 .btn {

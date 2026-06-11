@@ -55,7 +55,7 @@ h2 {
   @apply p-10;
 }
 #home .home-img img {
-  @apply aspect-4/2 object-cover;
+  @apply aspect-5/4 object-cover;
 }
 
 .btn {
