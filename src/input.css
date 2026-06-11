@@ -96,3 +96,6 @@ h2 {
 #facalities img {
   @apply object-cover aspect-5/4;
 }
+.image {
+  @apply object-cover w-full aspect-4/3;
+}
