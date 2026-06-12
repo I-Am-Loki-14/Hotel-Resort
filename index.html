@@ -16,7 +16,7 @@
 <body class=" dark:bg-gray-100">
     <!-- nav  -->
 
-    <nav class="z-3 fixed top-0 py-3 duration-300 transition-colors bg-transparent " id="navbar">
+    <nav class="z-3 fixed top-0 py-2 duration-300 transition-colors bg-transparent " id="navbar">
         <div class="container mx-auto">
             <a href="#home" id="logo" style="color: #E17100;font-size: 1.2rem;"><i class="fa-solid fa-bed"></i> My
                 Hotel</a>
@@ -84,7 +84,7 @@
                         more &gt;</a>
                 </div>
                 <div class="home-img ">
-                    <img src="./img/beach3.jpg" alt="" class="rounded">
+                    <img src="./img/beach3.jpg" alt="" class="rounded md:w-full">
                 </div>
             </div>
         </div>
@@ -169,12 +169,16 @@
         <div class="container px-10 m-auto">
             <div
                 class=" m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-5 font-[Monserrat] text-gray-600 ">
-                <button class="p-3 tab-btn cursor-pointer bg-gray-200 " data-tab="card-1">Swimming/GYM</button>
-                <button class="p-3 tab-btn cursor-pointer bg-gray-200 " data-tab="card-2">Sports Club</button>
-                <button class="p-3 tab-btn cursor-pointer bg-gray-200 " data-tab="card-3">Pick Up</button>
-                <button class="p-3 tab-btn cursor-pointer bg-gray-200 " data-tab="card-4">Restaurant/Bar</button>
+                <button class="p-3 tab-btn cursor-pointer bg-gray-200 font-[Monserrat]"
+                    data-tab="card-1">Swimming/GYM</button>
+                <button class="p-3 tab-btn cursor-pointer bg-gray-200 font-[Monserrat] " data-tab="card-2">Sports
+                    Club</button>
+                <button class="p-3 tab-btn cursor-pointer bg-gray-200 font-[Monserrat] " data-tab="card-3">Pick
+                    Up</button>
+                <button class="p-3 tab-btn cursor-pointer bg-gray-200 font-[Monserrat] "
+                    data-tab="card-4">Restaurant/Bar</button>
             </div>
-            <div class="container  sm:px-5 lg:px-20  gap-2">
+            <div class="container  sm:px-5   gap-2">
                 <div id="card-1"
                     class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center px-5 m-auto justify-content-center active tab-content gap-5 p-5">
                     <div class="w-full">
@@ -307,7 +311,7 @@
     </section>
     <section class="p-5 m-auto ">
         <div class="container grid md:grid-cols-1 lg:grid-cols-2 m-auto ">
-            <div class="bg-amber-600 p-10">
+            <div class="bg-amber-600 p-10 flex flex-column flex-wrap">
                 <h1 class="text-5xl text-gray-100 font-[Montserrat] font-normal">Luxury Services</h1>
                 <h5 class="my-5 text-gray-100">Lorem Ipsum is simply dummy text of the printing and typesetting
                     industry. Lorem Ipsum
@@ -336,8 +340,162 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center m-auto w-100 image">
-                <img src="./img/agency-work-02.jpg" alt="">
+
+            <div class="text-center w-full image object-cover">
+                <img src="./img/agency-work-02.jpg" alt="" class="md:h-full">
+            </div>
+        </div>
+    </section>
+
+    <!-- offers  -->
+    <section class="offers p-5" id="offers">
+        <div class="container   font-[Montserrat]  flex justify-center px-20 ">
+            <div class="m-full  py-10">
+                <h1 class=" text-amber-600 font-bold text-4xl text-center">HOTEL OFFERS</h1>
+                <p class="text-gray-700 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem
+                    Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                    make
+                    a type specimen
+                    book.</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 max-w-7xl mx-auto bg-gray-100">
+            <div class="flex flex-col md:flex-row items-stretch bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="w-full md:w-2/5 h-56 md:h-auto">
+                    <img src="./img/spa-img1.jpg" alt="Honeymoon" class="w-full h-full object-cover">
+                </div>
+                <div class="w-full md:w-3/5 p-5 flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-gray-800 tracking-wide uppercase font-[Montserrat]">Honeymoon
+                        Package</h3>
+                    <p class="text-gray-500 text-sm mt-2 leading-relaxed font-[Montserrat]">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. An Lorem Ipsum has
+                        been.
+                    </p>
+                    <div class="">
+                        <a href="###"><span
+                                class="text-orange-600 font-semibold uppercase text-xs tracking-wider font-[Montserrat] underline">Per
+                                Person /
+                                $2000</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-stretch bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="w-full md:w-2/5 h-56 md:h-auto">
+                    <img src="./img/spa-img2.jpg" alt="Honeymoon" class="w-full h-full object-cover">
+                </div>
+                <div class="w-full md:w-3/5 p-5 flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-gray-800 tracking-wide uppercase font-[Montserrat]">Honeymoon
+                        Package</h3>
+                    <p class="text-gray-500 text-sm mt-2 leading-relaxed font-[Montserrat]">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. An Lorem Ipsum has
+                        been.
+                    </p>
+                    <div class="">
+                        <a href="###"><span
+                                class="text-orange-600 font-semibold uppercase text-xs tracking-wider font-[Montserrat] underline">Per
+                                Person /
+                                $2000</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-stretch bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="w-full md:w-2/5 h-56 md:h-auto">
+                    <img src="./img/spa-img3.jpg" alt="Honeymoon" class="w-full h-full object-cover">
+                </div>
+                <div class="w-full md:w-3/5 p-5 flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-gray-800 tracking-wide uppercase font-[Montserrat]">Honeymoon
+                        Package</h3>
+                    <p class="text-gray-500 text-sm mt-2 leading-relaxed font-[Montserrat]">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. An Lorem Ipsum has
+                        been.
+                    </p>
+                    <div class="">
+                        <a href="###"><span
+                                class="text-orange-600 font-semibold uppercase text-xs tracking-wider font-[Montserrat] underline">Per
+                                Person /
+                                $2000</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row items-stretch bg-white rounded-lg overflow-hidden shadow-md">
+                <div class="w-full md:w-2/5 h-56 md:h-auto">
+                    <img src="./img/spa-img4.jpg" alt="Honeymoon" class="w-full h-full object-cover">
+                </div>
+                <div class="w-full md:w-3/5 p-5 flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold text-gray-800 tracking-wide uppercase font-[Montserrat]">Honeymoon
+                        Package</h3>
+                    <p class="text-gray-500 text-sm mt-2 leading-relaxed font-[Montserrat]">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. An Lorem Ipsum has
+                        been.
+                    </p>
+                    <div class="">
+                        <a href="###"><span
+                                class="text-orange-600 font-semibold uppercase text-xs tracking-wider font-[Montserrat] underline">Per
+                                Person /
+                                $2000</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container  p-5 grid md:grid-cols-2 lg:grid-cols-3 gap-5 m-auto md:w-full">
+            <div class="p-5 text-center  flex flex-column items-center flex-wrap justify-center">
+                <img src="./img/avtar-10.jpg" alt="" class="rounded-full object-cover w-25 h-25">
+                <p class="font-[Montserrat] text-gray-700">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, printer.</p>
+                <h4 class="text-gray-700 font-[Montserrat] text-l font-bold">MARK STRINGER, USA</h4>
+            </div>
+            <div class="p-5 text-center  flex flex-column items-center flex-wrap justify-center">
+                <img src="./img/avtar-11.jpg" alt="" class="rounded-full object-cover w-25 h-25">
+                <p class="font-[Montserrat] text-gray-700">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, printer.</p>
+                <h4 class="text-gray-700 font-[Montserrat] text-l font-bold">MARK STRINGER, USA</h4>
+            </div>
+            <div class="p-5 text-center  flex flex-column items-center flex-wrap justify-center">
+                <img src="./img/avtar-12.jpg" alt="" class="rounded-full object-cover w-25 h-25">
+                <p class="font-[Montserrat] text-gray-700">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's standard
+                    dummy text ever since the 1500s, printer.</p>
+                <h4 class="text-gray-700 font-[Montserrat] text-l font-bold">MARK STRINGER, USA</h4>
+            </div>
+        </div>
+
+        <div class="container travel-container grid md:grid-cols-2 lg:grid-cols-3 p-10 gap-5 m-auto"
+            style="background-image: url(./img/beach4.jpg);background-size: cover;background-position: center;width: 100%;">
+            <div class="text-center  rounded p-3 "
+                style="backdrop-filter: blur(px);background-color: rgba(1, 1, 1, 0.512);">
+                <h4 class="text-gray-50 text-sm">A HOLIDAY TO REMEMBER</h4>
+                <h1 class="text-3xl text-amber-500 my-5">Discover the World</h1>
+                <h4 class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid ad,
+                    dolor, fugiat numquam
+                    porro autem molestias iure laudantium vitae distinctio rerum quae hic in eius est necessitatibus
+                    architecto tempora!</h4>
+
+            </div>
+            <div class="text-center  rounded p-3 "
+                style="backdrop-filter: blur(px);background-color: rgba(1, 1, 1, 0.512);">
+                <h4 class="text-gray-50 text-sm">A HOLIDAY TO REMEMBER</h4>
+                <h1 class="text-3xl text-amber-500 my-5">Relax and Enjoy</h1>
+                <h4 class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid ad,
+                    dolor, fugiat numquam
+                    porro autem molestias iure laudantium vitae distinctio rerum quae hic in eius est necessitatibus
+                    architecto tempora!</h4>
+
+            </div>
+            <div class="text-center  rounded p-3 "
+                style="backdrop-filter: blur(px);background-color: rgba(1, 1, 1, 0.512);">
+                <h4 class="text-gray-50 text-sm">LAUNCH SPECIAL OFFER</h4>
+                <h1 class="text-3xl text-amber-500 my-5">Luxury by the Sea</h1>
+                <h4 class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aliquid ad,
+                    dolor, fugiat numquam
+                    porro autem molestias iure laudantium vitae distinctio rerum quae hic in eius est necessitatibus
+                    architecto tempora!</h4>
+
             </div>
         </div>
     </section>

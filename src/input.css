@@ -97,5 +97,11 @@ h2 {
   @apply object-cover aspect-5/4;
 }
 .image {
-  @apply object-cover w-full ;
+  @apply object-cover w-full;
+}
+.offers-img img {
+  @apply w-1/2 object-center object-cover;
+}
+.travel-container{
+  
 }
