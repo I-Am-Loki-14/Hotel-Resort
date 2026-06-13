@@ -43,7 +43,7 @@ nav .container ul {
   @apply uppercase md:mx-1 bg-gray-300 hover:bg-gray-200 px-5 py-2 rounded-xl text-gray-800 font-bold gap-2 text-center;
 }
 p {
-  @apply text-gray-600 py-5;
+  @apply text-gray-600 py-3;
 }
 h2 {
   @apply text-amber-600 text-5xl font-normal;
@@ -102,6 +102,5 @@ h2 {
 .offers-img img {
   @apply w-1/2 object-center object-cover;
 }
-.travel-container{
-  
+.travel-container {
 }
